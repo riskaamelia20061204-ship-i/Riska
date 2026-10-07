@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>04 - Kartu Produk - Sebelum</title>
+
+    <style>
+        /* CSS reset dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Atur body agar konten berada di tengah layar */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f7f6; /* abu-abu terang */
+        }
+
+        /* Gaya untuk kartu produk */
+        .product-card {
+            width: 280px;
+            border-radius: 10px;
+            overflow: hidden; /* agar gambar tidak keluar batas melengkung */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            background-color: white;
+        }
+
+        /* Gaya untuk gambar produk */
+        .product-card img {
+            max-width: 100%; /* responsif */
+            display: block; /* hilangkan margin bawah bawaan gambar */
+        }
+
+        /* Gaya untuk area teks di bawah gambar */
+        .product-info {
+            padding: 15px;
+        }
+
+        /* Gaya untuk harga produk */
+        .price {
+            color: #FF4500; /* warna merah/oranye */
+            font-weight: bold;
+            font-size: 1.2em;
+            display: block; /* agar harga berada di baris baru */
+            margin-top: 10px;
+        }
+
+        /* Gaya untuk tombol "Beli Sekarang" */
+        button {
+            width: 100%;
+            background-color: #2965F1; /* warna biru */
+            color: white; /* teks putih */
+            border: none; /* hilangkan border */
+            padding: 10px;
+            cursor: pointer; /* ubah kursor saat hover */
+            margin-top: 10px; /* beri jarak atas tombol */
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    INSTRUKSI PENGERJAAN:
+    1. Bungkus konten ke dalam kartu dengan class ".product-card" berukuran lebar ~280px.
+    2. Beri styling pada kartu (border atau shadow, border-radius, overflow: hidden agar gambar tidak keluar batas melengkung).
+    3. Buat gambar (img) responsif dengan max-width: 100% dan hilangkan margin bawah bawaan gambar (display: block).
+    4. Beri padding pada area teks di bawah gambar.
+    5. Styling harga agar mencolok (warna merah/oranye, font-weight tebal, ukuran lebih besar).
+    6. Tombol "Beli Sekarang": width 100%, background warna, warna teks putih, hilangkan border, padding, cursor pointer.
+    -->
+    <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80" alt="Sepatu Merah">
+        <div class="product-info">
+            <h3>Sepatu Lari Keren</h3>
+            <p>Sepatu lari yang ringan dan nyaman digunakan seharian.</p>
+            <span class="price">Rp 500.000</span>
+            <button>Beli Sekarang</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>09 - Testimoni - Sebelum</title>
+    <style>
+        /* CSS reset dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Atur body agar konten berada di tengah layar */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f7f6; /* abu-abu terang */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Gaya untuk grid testimoni */
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        /* Gaya untuk kartu testimoni */
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            position: relative; /* untuk pseudo-element */
+        }
+
+        /* Pseudo-element untuk tanda kutip besar */
+        .card::before {
+            content: '"';
+            font-size: 80px;
+            color: rgba(0,0,0,0.05);
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            z-index: 0; /* di belakang konten */
+        }
+
+        /* Gaya untuk penulis testimoni */
+        .author {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 15px;
+        }
+
+        .author h4 {
+            margin-bottom: 5px;
+        }
+        </style>    
+</head>
+
+<body>
+    <!-- 
+    INSTRUKSI PENGERJAAN:
+    1. Atur container ".testimonial-grid" menggunakan CSS Grid. Gunakan grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) dan beri gap.
+    2. Berikan gaya pada kartu (background, padding, border-radius, shadow ringan).
+    3. Buat posisi kartu menjadi "position: relative". 
+    4. Gunakan pseudo-element "::before" pada kartu untuk menambahkan karakter tanda kutip besar (content: '"') di pojok kiri atas sebagai watermark (ukuran sangat besar, warna sangat pudar, z-index rendah).
+    5. Rapikan elemen gambar profil dan nama (bisa menggunakan flexbox untuk menjejerkannya secara horizontal).
+    -->
+    <div class="testimonial-grid">
+        <div class="card">
+            <p>"Pelayanan luar biasa, website saya jadi lebih cepat dan menarik."</p>
+            <div class="author">
+                <h4>Andi Wijaya</h4>
+                <span>CEO StartupX</span>
+            </div>
+        </div>
+        <div class="card">
+            <p>"Sangat mudah diajak komunikasi dan hasilnya di luar ekspektasi."</p>
+            <div class="author">
+                <h4>Siti Aminah</h4>
+                <span>Pemilik Toko Online</span>
+            </div>
+        </div>
+        <div class="card">
+            <p>"Kualitas kode sangat bersih, mudah dilanjutkan oleh tim internal kami."</p>
+            <div class="author">
+                <h4>Reza Pratama</h4>
+                <span>CTO TechIndo</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

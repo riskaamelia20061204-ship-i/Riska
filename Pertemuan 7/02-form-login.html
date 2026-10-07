@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>02 - Form Login - Sebelum</title>
+
+    <style>
+        /* CSS reset dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Atur body agar form berada di tengah layar */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f7f6; /* abu-abu terang */
+        }
+
+        /* Gaya untuk kontainer form login */
+        .login-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Gaya untuk label */
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Gaya untuk input text dan password */
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Pseudo-class :focus pada input */
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: #2965F1; /* warna biru saat fokus */
+            outline: none; /* hilangkan outline default */
+        }
+
+        /* Gaya untuk tombol submit */
+        button[type="submit"] {
+            width: 100%;
+            background-color: #2965F1; /* warna biru */
+            color: white; /* teks putih */
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none; /* hilangkan border default */
+        }
+
+        /* Efek hover pada tombol submit */
+        button[type="submit"]:hover {
+            background-color: #1d4ed8; /* warna biru lebih gelap saat hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    INSTRUKSI PENGERJAAN (TO-DO LIST):
+    1. Atur body agar form berada di tengah layar (Flexbox, min-height 100vh).
+    2. Berikan gaya pada kontainer ".login-container" (background putih, padding 30px, border-radius 8px, box-shadow).
+    3. Atur label agar display-nya 'block' dan memiliki margin-bottom agar input ada di bawahnya.
+    4. Atur input text dan password agar lebarnya 100% (width: 100%), padding 10px, margin-bottom 15px, border 1px solid #ccc, dan border-radius 5px.
+    5. Tambahkan pseudo-class :focus pada input (ubah warna border menjadi biru dan outline: none saat diklik).
+    6. Atur tombol submit (lebar 100%, background warna, warna teks putih, padding, border-radius, cursor: pointer, border: none).
+    7. Tambahkan efek hover pada tombol submit.
+    -->
+    <div class="login-container">
+        <h2>Masuk ke Akun</h2>
+        <form>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Masukkan email">
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Masukkan password">
+            
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>

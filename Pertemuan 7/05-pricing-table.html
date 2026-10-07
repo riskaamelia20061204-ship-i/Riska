@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>05 - Pricing Table - Sebelum</title>
+    
+    <style>
+        /* CSS reset dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }   
+
+        /* Atur body agar konten berada di tengah layar */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f7f6; /* abu-abu terang */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Gaya untuk wadah pricing */
+        .pricing-container {
+            display: flex; /* Gunakan Flexbox atau CSS Grid sesuai instruksi */
+            gap: 20px; /* Jarak antar paket */
+        }
+
+        /* Gaya untuk setiap paket */
+        .plan {
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 200px; /* Lebar tetap untuk setiap paket */
+        }
+
+        /* Gaya khusus untuk paket populer */
+        .popular {
+            transform: scale(1.05); /* Membuat paket populer sedikit lebih besar */
+            border-color: #38BDF8; /* Ubah warna border untuk membedakan */
+        }
+
+        /* Gaya untuk daftar fitur */
+        ul {
+            list-style-type: none; /* Hilangkan bullet */
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        ul li {
+            margin-bottom: 10px; /* Jarak antar fitur */
+        }
+
+        button {
+            background-color: #38BDF8; /* Warna biru */
+            color: white; /* Teks putih */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1e40af; /* Warna biru lebih gelap saat hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    INSTRUKSI PENGERJAAN:
+    1. Gunakan CSS Grid atau Flexbox pada ".pricing-container" untuk menyejajarkan 3 paket secara horizontal.
+    2. Berikan gaya dasar pada setiap kartu ".plan" (border, padding, border-radius, background putih, text-align center).
+    3. Khusus untuk paket tengah (berikan class .popular), ubah ukuran agar sedikit lebih menonjol (transform: scale(1.05) atau padding lebih besar).
+    4. Ubah warna border/header pada paket popular untuk membedakannya.
+    5. Hilangkan bullet pada daftar fitur (ul) dan berikan jarak.
+    -->
+    <div class="pricing-container">
+        <div class="plan">
+            <h3>Basic</h3>
+            <h2>Gratis</h2>
+            <ul>
+                <li>1 Pengguna</li>
+                <li>Penyimpanan 1GB</li>
+                <li>Dukungan Komunitas</li>
+            </ul>
+            <button>Pilih Basic</button>
+        </div>
+        <div class="plan popular">
+            <h3>Pro (Populer)</h3>
+            <h2>Rp 100.000/bln</h2>
+            <ul>
+                <li>5 Pengguna</li>
+                <li>Penyimpanan 50GB</li>
+                <li>Dukungan Prioritas</li>
+            </ul>
+            <button>Pilih Pro</button>
+        </div>
+        <div class="plan">
+            <h3>Enterprise</h3>
+            <h2>Hubungi Kami</h2>
+            <ul>
+                <li>Pengguna Tak Terbatas</li>
+                <li>Penyimpanan Unlimited</li>
+                <li>Dukungan 24/7</li>
+            </ul>
+            <button>Pilih Enterprise</button>
+        </div>
+    </div>
+</body>
+</html>
