@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Keuangan</title>
+
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <div class="dashboard">
+
+        <!--Ketentuan Desain (CSS):
+	Buat layout 2 kolom. Kolom Sidebar selebar 250px dengan background biru tua (#212529) dan teks menu berwarna putih.
+	Kolom Konten Utama mengambil sisa lebar layar (bisa menggunakan flex: 1 atau persentase).
+	Gunakan komponen Card untuk menampilkan "SALDO KAS" dan "PIUTANG". Kedua card tersebut harus sejajar secara horizontal (inline-block atau flexbox).
+    -->
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Menu Utama</h2>
+            
+            <ul>
+                <li><a href="dashboard.html" class="active">&gt; Dashboard</a></li>
+                <li><a href="jurnal.html">&gt; Jurnal</a></li>
+                <li><a href="buku-besar.html">&gt; Buku Besar</a></li>
+                <li><a href="laba-rugi.html">&gt; Laba Rugi</a></li>
+                <li><a href="neraca.html">&gt; Neraca</a></li>
+            </ul>
+           
+
+            <div class="logout">
+                <a href="login.html">[Logout]</a>
+            </div>
+        </aside>
+
+        <!-- Konten Utama -->
+        <main class="main-content">
+            <h1>DASHBOARD KEUANGAN</h1>
+
+            <p class="welcome">
+                Selamat datang, Manajer Keuangan!
+            </p>
+
+            <!-- Ringkasan Keuangan -->
+            <div class="card-container">
+
+                <div class="card">
+                    <h3>SALDO KAS</h3>
+                    <p>Rp 150.000.000</p>
+                </div>
+
+                <div class="card">
+                    <h3>PIUTANG</h3>
+                    <p>Rp 45.500.000</p>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>
+```

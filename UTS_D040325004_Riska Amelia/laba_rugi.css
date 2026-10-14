@@ -1,0 +1,145 @@
+
+/* Pengaturan dasar halaman */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffff04;
+    margin: 0;
+    padding: 30px;
+    color: #222222;
+}
+
+/* Container laporan */
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 25px;
+    border: 1px solid #315d85;
+    border-radius: 5px;
+}
+
+/* Judul laporan */
+h2 {
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: center;
+    font-size: 18px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.periode {
+    text-align: center;
+    margin: 5px 0 25px;
+    font-size: 16px;
+}
+
+/* Tabel laporan */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+/* Garis batas tabel */
+th,
+td {
+    border: 1px solid #315d85;
+    padding: 8px 10px;
+}
+
+/* Header tabel */
+thead th {
+    background-color: #b8c5d1;
+    color: #111111;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Lebar kolom */
+.kode {
+    width: 15%;
+}
+
+.nominal {
+    width: 25%;
+    text-align: right;
+    white-space: nowrap;
+}
+
+/* Kolom keterangan */
+.keterangan {
+    text-align: left;
+}
+
+/* Kode akun rata tengah */
+tbody td:first-child {
+    text-align: center;
+}
+
+/* Zebra-striping */
+tbody tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Baris total laba bersih */
+tbody tr.total {
+    background-color: #b8c5d1;
+    font-weight: bold;
+}
+
+.total td {
+    border-top: 2px solid #315d85;
+}
+
+.total td:first-child {
+    text-align: right;
+}
+
+/* Tampilan untuk layar kecil */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 12px;
+        overflow-x: auto;
+    }
+
+    table {
+        font-size: 12px;
+        min-width: 400px;
+    }
+
+    th,
+    td {
+        padding: 7px 5px;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    .periode {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input Jurnal Umum</title>
+    <link rel="stylesheet" href="jurnal_umum.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>FORM INPUT JURNAL UMUM</h2>
+
+        <form>
+            <div class="form-group">
+                <label for="tanggal">Tanggal Transaksi</label>
+                <input type="date" id="tanggal" name="tanggal">
+            </div>
+
+            <div class="form-group">
+                <label for="bukti">No. Bukti</label>
+                <input type="text" id="bukti" name="bukti">
+            </div>
+
+            <div class="form-group">
+                <label for="keterangan">Keterangan</label>
+                <textarea id="keterangan" name="keterangan" rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="akun">Nama Akun</label>
+                <select id="akun" name="akun">
+                    <option value="">-- Pilih Akun --</option>
+                    <option value="kas">Kas</option>
+                    <option value="piutang">Piutang Usaha</option>
+                    <option value="perlengkapan">Perlengkapan</option>
+                    <option value="peralatan">Peralatan</option>
+                    <option value="utang">Utang Usaha</option>
+                    <option value="modal">Modal</option>
+                    <option value="pendapatan">Pendapatan</option>
+                    <option value="beban">Beban</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Posisi Saldo</label>
+                <div class="radio-group">
+                    <input type="radio" id="debit" name="posisi"
+                           value="debit" checked>
+                    <label for="debit">Debit</label>
+
+                    <input type="radio" id="kredit" name="posisi"
+                           value="kredit">
+                    <label for="kredit">Kredit</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="nominal">Nominal (Rp)</label>
+                <input type="number" id="nominal" name="nominal"
+                       min="1" placeholder="Masukkan nominal">
+            </div>
+
+            <div class="form-button">
+                <button type="submit">SIMPAN TRANSAKSI</button>
+                <button type="reset">BATAL</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

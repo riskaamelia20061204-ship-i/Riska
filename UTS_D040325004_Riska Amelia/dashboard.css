@@ -1,0 +1,188 @@
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tampilan halaman */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f604;
+    color: #222;
+}
+    
+/* Layout dua kolom */
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    min-width: 250px;
+    background-color: #212529;
+    color: white;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Judul menu */
+.sidebar h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #6c757d;
+}
+
+/* Daftar menu */
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 8px;
+}
+
+.sidebar ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 8px 5px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+/* Efek menu */
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #495057;
+    padding-left: 12px;
+}
+
+/* Logout */
+.logout {
+    margin-top: auto;
+    padding-top: 30px;
+}
+
+.logout a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.logout a:hover {
+    color: #ffc107;
+}
+
+/* Konten utama */
+.main-content {
+    flex: 1;
+    min-width: 0;
+    padding: 35px 25px;
+}
+
+.main-content h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+/* Teks sambutan */
+.welcome {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* Container card */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: stretch;
+}
+
+/* Card keuangan */
+.card {
+    flex: 0 1 210px;
+    min-width: 190px;
+    padding: 20px 15px;
+    text-align: center;
+    background: linear-gradient(
+        to bottom,
+        #f8f9fa,
+        #e1e7ee
+    );
+    border: 2px solid #285581;
+    border-radius: 8px;
+    box-shadow: 4px 5px 0 #b9c0c8;
+}
+
+/* Judul card */
+.card h3 {
+    font-size: 19px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+/* Nominal uang */
+.card p {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+/* Responsive untuk HP */
+@media (max-width: 650px) {
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-width: 0;
+        padding: 20px;
+    }
+
+    .sidebar h2 {
+        font-size: 20px;
+    }
+
+    .sidebar ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .sidebar ul li {
+        margin-bottom: 0;
+    }
+
+    .logout {
+        margin-top: 20px;
+        padding-top: 10px;
+    }
+
+    .main-content {
+        padding: 25px 20px;
+    }
+
+    .main-content h1 {
+        font-size: 24px;
+    }
+
+    .card-container {
+        gap: 18px;
+    }
+
+    .card {
+        flex: 1 1 100%;
+    }
+}
+
+
+
+

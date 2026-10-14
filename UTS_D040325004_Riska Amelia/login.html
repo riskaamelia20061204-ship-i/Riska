@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login SIA Terpadu</title>
+
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!--Ketentuan Desain (CSS):
+	Latar belakang halaman (body) berwarna abu-abu terang (#f4f6f9).
+	Kotak form login (card) memiliki latar belakang putih, border-radius (sudut melengkung), dan box-shadow tipis.
+	Tombol "MASUK SISTEM" berwarna biru (#0d6e04) dengan teks putih, dan warnanya sedikit lebih gelap ketika di-hover.
+	Gunakan teknik Flexbox atau CSS Grid untuk menengahkan kotak login di layar.
+    -->
+    <div class="login-card">
+
+        <h1>PT PRIMA AKUNTINDO</h1>
+        <p class="subtitle">Login SIA Terpadu</p>
+
+        <form id="loginForm">
+
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Masukkan username"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Masukkan password"
+                    required
+                >
+            </div>
+
+            <button type="submit">MASUK SISTEM</button>
+
+            <p id="message"></p>
+
+        </form>
+
+    </div>
+
+    <script>
+        const form = document.getElementById("loginForm");
+        const message = document.getElementById("message");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            message.textContent =
+                "Form berhasil diisi. Login belum terhubung ke server.";
+        });
+    </script>
+
+</body>
+</html>

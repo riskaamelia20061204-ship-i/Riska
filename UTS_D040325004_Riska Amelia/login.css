@@ -1,0 +1,120 @@
+
+/* Pengaturan seluruh elemen */
+* {
+    box-sizing: border-box;
+}
+
+/* Tampilan halaman */
+body
+    {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f604; 
+    }
+
+
+/* Kotak form login */
+.login-card
+   {
+    width: 390px;
+    max-width: 100%;
+    padding: 30px 28px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+   }
+
+/* Judul perusahaan */
+h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 24px;
+    color: #111;
+}
+
+/* Subjudul login */
+.subtitle {
+    margin: 8px 0 24px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Jarak setiap input */
+.form-group {
+    margin-bottom: 16px;
+}
+
+/* Label username dan password */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+/* Kotak input */
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #0d6e04;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Efek saat input dipilih */
+input:focus {
+    border-color: #084298;
+    box-shadow: 0 0 4px rgba(13, 110, 253, 0.4);
+}
+
+/* Tombol masuk sistem */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 4px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0d6e04;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Efek hover tombol */
+button:hover {
+    background-color: #0b5ed7;
+}
+
+/* Pesan setelah form dikirim */
+#message {
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 13px;
+    color: #b02a37;
+}
+
+/* Tampilan layar HP */
+@media (max-width: 450px) {
+    body {
+        padding: 20px;
+    }
+
+    .login-card {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 21px;
+    }
+}
+
+
+
